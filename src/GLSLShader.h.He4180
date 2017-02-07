@@ -1,0 +1,21 @@
+#ifndef GLSLSHADER_H
+#define GLSLSHADER_H
+
+#include "include_graphics_libs.h"
+
+class GLSLShader
+{
+public:
+    GLSLShader();
+    GLSLShader(const char* vertF, const char* fragF);
+
+    GLuint GetProgram();
+
+    void SetProgram(GLuint program);
+    void load();
+
+private:
+    GLuint _program;
+};
+
+#endif // GLSLSHADER_H
